@@ -1,0 +1,298 @@
+/* Custom Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+:root{
+    --bodyBg: #efebe9;
+    --containerBg: #f5f5f5;
+    --gray: #bdbdbd;
+    --black : #252525;
+    --green: #43a047;
+    --white: #ffffff;
+    --red: #ff5722;
+    --hoverBg: #26a69a;
+}
+
+
+/* Global Css Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--bodyBg);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 50%;
+}
+input[type="text"],input[type="number"]{
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 15px;
+    border: none;
+    transition: all 0.3s ease;
+    
+}
+
+input[type="text"]:focus,input[type="number"]:focus {
+    outline: none;
+}
+
+
+
+button{
+    border: none;
+    background: var(--black);
+    color: var(--white);
+    height: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background: var(--hoverBg);
+    color: var(--white);
+}
+
+/* Global Class Css */
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.green{
+    background: var(--green);
+    color: var(--white);
+}
+
+.red{
+    background: var(--red);
+    color: var(--white);
+}
+
+
+.container {
+    width: 80%;
+    background-color: var(--containerBg);
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 12px rgb(0 0 0 / 8%);
+    margin: 80px 0px;
+}
+
+/* // Section based css styles */
+
+.title{
+    padding-bottom: 30px;
+    text-align: center;
+}
+.title h1{
+    font-size:50px;
+    color: var(--hoverBg)
+}
+.title span{
+    color: var(--green)
+}
+.input-box{
+    background-color: var(--white);
+    border: 1px solid var(--gray);
+    height: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.093);
+    margin-bottom: 20px;
+
+}
+.input-box .input-field {
+    position: relative;
+    flex-basis: 75%;
+    max-width: 75%;
+}
+
+.input-box .input-field img{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+}
+.input-box .input-field input[type="text"]{
+    padding: 15px 45px; 
+}
+
+.input-box button{
+    max-width: 25%;
+    flex-basis: 25%;
+}
+
+
+.input-box .input-field2 {
+    flex-basis: 37.5%;
+    max-width: 37.5%;
+}
+.input-box .input-field2:first-child{
+    border-right: 1px solid var(--gray)
+}
+
+
+.input-box .input-field input[type="text"]:focus{
+    outline: none;
+}
+.box-container{
+    justify-content: space-between!important;
+   padding: 20px 20px;
+   
+}
+
+.box-container .box{
+    flex-basis: 31%;
+    width: 31%;
+    text-align: center;
+    padding: 50px 40px;
+    background-color:var(--black);
+    color:white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.box-container h1{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.box-container h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.box-container .box1{
+    background-color: var(--green);
+}
+.box-container .box2{
+    background-color: var(--red);
+}
+.box-container .box3{
+    background-color: var(--hoverBg);
+}
+
+footer{
+    padding: 10px 0px;
+    color: var(--black);
+}
+
+footer a{
+    padding: 10px 0px;
+    color: var(--hoverBg);
+    transition: all 0.5s ease
+}
+footer a:hover{
+    color: var(--red);
+}
+
+@media (max-width: 900px) {
+    button {
+        font-size: 12px;
+    }
+    .container {
+        width: 90%;
+        padding: 50px 30px;
+        margin: 50px 0px;
+
+    }
+    .input-box .input-field input[type="text"] {
+        padding: 12px 40px;
+        font-size: 12px;
+    }
+    button {
+        font-size: 12px;
+    }
+
+   
+    .input-box .input-field img {
+        width: 15px;
+        height: 15px;
+        left: 4%;
+    }
+    .box-container{
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+    .box-container .box {
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .box-container h1{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .box-container h2{
+        font-size: 30px;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        padding: 40px 20px;
+        margin: 40px 0px;
+    }
+    input[type="text"] , input[type="number"]{
+        padding: 12px 30px;
+        font-size: 11px;
+    }
+    .title{
+        padding-bottom: 20px;
+        
+    }
+    .title h1{
+        font-size:35px;
+    }
+    .input-box .input-field {
+        flex-basis: 65%;
+        max-width: 65%;
+    }
+
+    .input-box .input-field img {
+        width: 14px;
+        height: 14px;
+        left: 6%;
+    }
+    .input-box button{
+        max-width: 35%;
+        flex-basis: 35%;
+    }
+    .input-box button {
+        font-size: 11px;
+    }
+
+    .input-box .input-field2 {
+        flex-basis: 32.5%;
+        max-width: 32.5%;
+        /* font-size: 11px; */
+    }
+
+    .box-container .box {
+        width: 100%;
+        margin: 10px 0px;
+    }
+    
+}
