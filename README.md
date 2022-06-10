@@ -19,3 +19,8 @@ This is a test application built for my practice purpose. Here I build a budget 
 ## Stage 1 (Html CSS Design)
 
 This is the first stage of the project here I am just make my project to html css.To check also the code on stage based please check the branches.
+
+
+## Stage 2 (Web Interactivity Using DOM)
+
+This is the stage 2, here i added dom to make the application interactivity.
