@@ -128,11 +128,11 @@ button:hover{
     width: 17px;
     height: 17px;
     top: 50%;
-    left: 3%;
+    left: 2.5%;
     transform: translateY(-50%);
 }
 .input-box .input-field input[type="text"]{
-    padding: 15px 45px; 
+    padding: 15px 50px; 
 }
 
 .input-box button{
