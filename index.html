@@ -16,30 +16,34 @@
         <div class="input-box flex">
             <div class="input-field">
                 <img src="./images/money-bag.png" alt="">
-                <input type="text" placeholder="Total Budget" id="totalBudget">
+                <input type="text" placeholder="Total Budget" id="totalBudgetField">
             </div>
-            <button class="green">Total Budget</button>
+            <button class="green" id="totalBudgetSubmit">Total Budget</button>
         </div>
 
         <div class="input-box flex">
-            <input type="number" placeholder="Quantity" class="input-field2" id="quantity">
-            <input type="text" class="input-field2" placeholder="Cost" id="cost">
-            <button class="red">Add Cost</button>
+            <input type="number" placeholder="Quantity" class="input-field2" id="costQuantity">
+            <input type="text" class="input-field2" placeholder="Cost" id="inputCost">
+            <button class="red" id="costSubmit">Cost</button>
         </div>
 
+        <div id="limit" class="flex none">
+            <h3>Budget Limit Crossed</h3>
+            <button id="more">Add Now</button>
+        </div>
 
         <div class="box-container flex">
             <div class="box box1">
                 <h1>Total Budget(৳)</h1>
-                <h2>0.00</h2>
+                <h2 id="totalBudget">0.00</h2>
             </div>
             <div class="box box2">
                 <h1>Total Cost(৳)</h1>
-                <h2>0.00</h2>
+                <h2 id="totalCost">0.00</h2>
             </div>
             <div class="box box3">
                 <h1>Remaining(৳)</h1>
-                <h2>0.00</h2>
+                <h2 id="remianing">0.00</h2>
             </div>
         </div>
     </div>
@@ -47,5 +51,7 @@
     <footer>
         <h3>Design & Develop By <a href="https://github.com/Hridayshaha" target="_blank">Hridoy Saha</a></h3>
     </footer>
+
+    <script src="./js/app.js"></script>
 </body>
 </html>

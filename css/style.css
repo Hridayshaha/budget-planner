@@ -65,6 +65,8 @@ button:hover{
     color: var(--white);
 }
 
+
+
 /* Global Class Css */
 .flex{
     display: flex;
@@ -83,7 +85,14 @@ button:hover{
     background: var(--red);
     color: var(--white);
 }
+.none{
+    visibility: hidden;
+    display: none
+}
 
+.show{
+    visibility: visible;
+}
 
 .container {
     width: 80%;
@@ -203,6 +212,18 @@ footer a{
 }
 footer a:hover{
     color: var(--red);
+}
+#limit{
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+#limit h3{
+    color: var(--red);
+    font-size: 20px;
+}
+#limit button{
+    padding: 15px 25px;
+    border-radius: 30px;
 }
 
 @media (max-width: 900px) {
